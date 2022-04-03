@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Forms</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="reset.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+     <form action="https://www.bit-by-bit.ru/form-submit" id="container" class="container-flex">
+
+        <div id="image">
+             <img src="mountains.jpg" id="mountains">
+        </div>
+
+        <div id="container-center">
+            <h1 id="title">Регистрация</h1>
+            <div class="row">
+                <div class="row-blok">
+                    <label for="name" class="label">Имя</label>
+                    <input id="name" type="text" name="firstName" class="item registration-input" /> 
+                </div>
+                <div class="row-blok">
+                    <label for="surname" class="label">Фамилия</label>
+                    <input id="surname" type="text" name="lastName" class="item registration-input" />   
+                </div>
+                <div class="row-blok">
+                    <label for="email" class="label">Email</label>
+                    <input id="email" type="email" name="email" class="item registration-input" />
+                </div>
+               <div class="row-blok">
+                    <label for="phone" class="label">Телефон</label>
+                    <input id="phone" type="tel" name="phoneNumber" class="item registration-input" />
+               </div>
+            </div>
+
+            <h2 id="title_address">Адрес доставки</h2>
+            <div class="flex address-row">
+                <div class="address-blok">
+                    <p class="label">Страна</p>
+                    <select name="country" class="item address">
+                        <option value="Russia" selected="selected">Россия</option>
+                        <option value="Belarus">Беларусь</option>
+                        <option value="Kazakhstan">Казахстан</option>
+                        <option value="Poland">Польша</option>
+                    </select>
+
+                    <!-- <label for="countryChoice1">Россия</label>
+                    <input type="radio" id="countryChoice1" name="country" value="Russia" />
+                    <label for="countryChoice2">Беларусь</label>
+                    <input type="radio" id="countryChoice2" name="country" value="Belarus" />
+                    <label for="countryChoice3">Казахстан</label>
+                    <input type="radio" id="countryChoice3" name="country" value="Kazakhstan" />
+                    <label for="countryChoice4">Польша</label>
+                    <input type="radio" id="countryChoice4" name="country" value="Poland" /> -->
+                </div>
+                <div class="address-blok">
+                    <label for="city" class="label">Город</label>
+                    <input id="city" type="text" name="city" class=" item" />
+                </div>
+                <div class="address-blok">
+                    <label for="index" class="label">Почтовый индекс</label>
+                    <input id="index" type="number" name="postalCode" class=" item" />
+                </div>
+                <div class="address-one-blok">
+                    <label for="address" class="label">Адрес доставки (улица, дом, квартира)</label>
+                    <input id="address" type="text" type="number" name="address" class="item" />
+                </div>
+            </div>
+
+            <div class="communication-row">
+                <h2 id="title_communication">Уведомлять об акциях и скидках</h2>
+                <p id="communication_text">Мы не будем отправлять спам, но напишем, когда поступят новые товары или будет большая распродажа.</p>
+                <div class="communication">
+                    <div class="checkbox-blok">
+                        <input type="checkbox" id="contactChoice1" name="contacts" value="email" class="checkbox" />
+                        <label for="contactChoice1" class="label">По Email</label>
+                    </div>
+                    <div class="checkbox-blok">
+                        <input type="checkbox" id="contactChoice2" name="contacts" value="sms" class="checkbox" />
+                        <label for="contactChoice2" class="label">По SMS</label>
+                    </div>
+                    <div class="checkbox-blok">
+                        <input type="checkbox" id="contactChoice3" name="contacts" value="push" class="checkbox" />
+                        <label for="contactChoice3" class="label">Push-уведомления в приложении</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="address-one-blok item knopka">Создать аккаунт</button>
+            
+        </div>
+    </form>
+  </body>
